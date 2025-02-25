@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../home initiative/style.css">
     <title>Login</title>
 </head>
+
 <body>
     <div class="container">
         <video width="550" height="400" autoplay muted loop playsinline class="container">
             <source src="home.mp4" type="video/mp4">
             Your browser does not support the video tag.
-          </video>
+        </video>
         <h1 style="text-align: center;">Welcome to our home initiative</h1>
         <br>
         <br>
@@ -21,7 +22,62 @@
         <input type="password" id="password" placeholder="Password">
         <button onclick="login()">Login</button>
     </div>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
 
-    <script src="script.js"></script>
+        .container {
+            width: 300px;
+            margin: 50px auto;
+        }
+
+        input {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+        }
+
+        button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+        }
+
+        video {
+            height: auto;
+            width: auto;
+        }
+    </style>
+
+    <script>
+        function login() {
+            let username = document.getElementById('username').value;
+            let password = document.getElementById('password').value;
+            if (username == "shifo" && password == "123") {
+
+                localStorage.setItem('loggedInUser', username);
+                window.location.href = 'shifo.html';
+            }
+            else if (username == "ahmed" && password == "1233") {
+                localStorage.setItem('loggedInUser', username);
+                window.location.href = 'dad.html';
+
+            }
+            else if (username == "randa" && password == "122") {
+                localStorage.setItem('loggedInUser', username);
+                window.location.href = 'mum.html';
+            }
+            else if (username == "nancy" && password == "112") {
+                localStorage.setItem('loggedInUser', username);
+                window.location.href = 'sister.html';
+            }
+            else {
+                alert('error try again');
+            }
+        }
+    </script>
 </body>
+
 </html>
