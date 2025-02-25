@@ -13,8 +13,6 @@
             <li>Rules</li>
             <li>support</li>
             <li>About me</li>
-            <li>shifo</li>
-            <li>hello</li>
         </ul>
     </header>
     <div class="container">
@@ -69,12 +67,34 @@
             background-color: rgb(1, 199, 140);
             justify-content: center;
             border-radius: 10px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
         }
 
         .header li {
             padding: 2.5vh;
             font-size: x-large;
         }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: center;
+                padding: 0px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-links li {
+                padding: 0px;
+            }}
     </style>
 
     <script>
