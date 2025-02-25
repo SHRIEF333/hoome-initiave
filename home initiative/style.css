@@ -1,0 +1,24 @@
+body { 
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+     width: 300px;
+    margin: 50px auto; 
+}
+
+input{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px; 
+}
+button{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px; 
+}
+video{
+    height: auto;
+    width: auto;
+}
