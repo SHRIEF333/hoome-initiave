@@ -29,6 +29,8 @@
         <input type="password" id="password" placeholder="Password">
         <button class="b" onclick="login()">Login</button>
     </div>
+    <b>user:test
+    password: 123</b>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -101,7 +103,7 @@
         function login() {
             let username = document.getElementById('username').value;
             let password = document.getElementById('password').value;
-            if (username == "shifo" && password == "123") {
+            if (username == "test" && password == "123") {
 
                 localStorage.setItem('loggedInUser', username);
                 window.location.href = 'shifo.html';
